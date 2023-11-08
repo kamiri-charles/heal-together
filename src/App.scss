@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ui-primary: #5E239D;
+  --ui-secondary: #F61067;
+  --ui-tertiary: #00F0B5;
+  --ui-white: #FFF;
+  --ui-black: #000;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(to bottom right, var(--ui-primary) 60%, var(--ui-secondary) 100%);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+button, a, input, textarea {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-weight: 600;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ui-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ui-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ui-black);
+}
