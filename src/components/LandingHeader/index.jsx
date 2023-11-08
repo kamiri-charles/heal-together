@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
+import "./styles.scss";
 
-export const LandingHeader = () => {
+const LandingHeader = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const nav = useNavigate();
+
   return (
-    <div className="welcome__header">
+    <div className="landing-header">
       <div className="left">
         <Link to="header-offset" spy={true} smooth={true} duration={500}>
           <div>Heal</div> <div>Together</div>
@@ -66,14 +70,13 @@ export const LandingHeader = () => {
           </Link>
 
           <div className="buttons-mobile">
-            <button className="sign-in">Sign In</button>
+            <button onClick={() => nav('/sign-in')}>Sign In</button>
             <button>Sign Up</button>
           </div>
         </div>
 
         <div className="buttons">
-          <button className="sign-in">Sign In</button>
-          or
+          <button onClick={() => nav('/sign-in')}>Sign In</button>
           <button className="sign-up">Get Started</button>
         </div>
 
@@ -84,3 +87,6 @@ export const LandingHeader = () => {
     </div>
   );
 };
+
+
+export default LandingHeader;
