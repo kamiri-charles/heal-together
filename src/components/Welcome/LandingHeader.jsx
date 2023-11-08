@@ -6,7 +6,7 @@ export const LandingHeader = () => {
   return (
     <div className="welcome__header">
       <div className="left">
-        <Link to="home" spy={true} smooth={true} duration={500}>
+        <Link to="header-offset" spy={true} smooth={true} duration={500}>
           <div>Heal</div> <div>Together</div>
         </Link>
       </div>

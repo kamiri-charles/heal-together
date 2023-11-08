@@ -6,6 +6,7 @@ const Welcome = () => {
       <div className="welcome">
         <LandingHeader />
 
+        <div id="header-offset"></div>
         <div id="home" className="section">
           <div className="welcome__text">
             <div className="motto">You deserve to be happy!</div>
@@ -14,9 +15,29 @@ const Welcome = () => {
             </div>
 
             <div className="cards">
-              <div className="card"></div>
-              <div className="card"></div>
-              <div className="card"></div>
+              <div className="card individual">
+                <div className="card-title">Individual</div>
+                <div className="icon">
+                  <span>For myself.</span>
+                  <i className="bx bx-right-arrow-alt"></i>
+                </div>
+              </div>
+
+              <div className="card couple">
+                <div className="card-title">Couple</div>
+                <div className="icon">
+                  <span>For me and my partner.</span>
+                  <i className="bx bx-right-arrow-alt"></i>
+                </div>
+              </div>
+
+              <div className="card teen">
+                <div className="card-title">Teen</div>
+                <div className="icon">
+                  <span>For my kid.</span>
+                  <i className="bx bx-right-arrow-alt"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -40,19 +61,16 @@ const Welcome = () => {
           </div>
         </div>
 
-        <div id="faq" className='section'>
-
-            <div className="title">Frequently Asked Questions</div>
+        <div id="faq" className="section">
+          <div className="title">Frequently Asked Questions</div>
         </div>
 
-        <div id="jobs" className='section'>
-
-            <div className="title">Therapist Jobs</div>
+        <div id="jobs" className="section">
+          <div className="title">Therapist Jobs</div>
         </div>
 
-        <div id="contact" className='section'>
-
-            <div className="title">Get in Touch</div>
+        <div id="contact" className="section">
+          <div className="title">Get in Touch</div>
         </div>
       </div>
     );

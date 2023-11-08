@@ -17,7 +17,7 @@
 body {
   height: 100vh;
   font-family: 'Ubuntu', sans-serif;
-  background: linear-gradient(to bottom right, var(--ui-primary) 60%, var(--ui-secondary) 100%);
+  background: var(--ui-primary);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
