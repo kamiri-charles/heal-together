@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/heal-together/static/css/main.51127752.css",
+    "main.js": "/heal-together/static/js/main.e7de0647.js",
+    "static/js/787.3fab6925.chunk.js": "/heal-together/static/js/787.3fab6925.chunk.js",
+    "static/media/boxicons.svg": "/heal-together/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/boxicons.eot": "/heal-together/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/heal-together/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/heal-together/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/boxicons.woff2": "/heal-together/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "index.html": "/heal-together/index.html",
+    "main.51127752.css.map": "/heal-together/static/css/main.51127752.css.map",
+    "main.e7de0647.js.map": "/heal-together/static/js/main.e7de0647.js.map",
+    "787.3fab6925.chunk.js.map": "/heal-together/static/js/787.3fab6925.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51127752.css",
+    "static/js/main.e7de0647.js"
+  ]
+}
