@@ -39,8 +39,8 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 100px;
-                background: black;
+                width: 180px;
+                background: var(--ui-black);
                 top: 60px;
                 left: 100vw;
                 border-radius: 5px;
@@ -49,7 +49,7 @@
 
 
                 &.active {
-                    left: calc(100vw - 100px);
+                    left: calc(100vw - 180px);
                 }
 
                 a {
@@ -60,6 +60,21 @@
 
                     &:hover {
                         color: var(--ui-secondary);
+                    }
+                }
+
+                .buttons-mobile {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    button {
+                        width: 80px;
+                        padding: 10px 5px;
+                        margin-inline: 2px;
+                        border-radius: 10px;
+                        background: var(--ui-white);
+                        color: var(--ui-black);
                     }
                 }
             }
@@ -129,6 +144,7 @@
 
         .cards {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-around;
             width: 100%;
@@ -140,6 +156,10 @@
                 background: var(--ui-black);
                 border-radius: 15px;
                 margin: 20px;
+
+                @media screen and (max-width: 700px) {
+                    height: 80px;
+                }
             }
         }
     }
@@ -199,8 +219,7 @@
         };
 
         .welcome__header .right .buttons {
-            position: absolute;
-            left: 50%;
+            display: none;
         }
 
         .welcome__header .right .ham-menu {

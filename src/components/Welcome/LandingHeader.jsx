@@ -64,6 +64,11 @@ export const LandingHeader = () => {
           >
             Contact
           </Link>
+
+          <div className="buttons-mobile">
+            <button className="sign-in">Sign In</button>
+            <button>Sign Up</button>
+          </div>
         </div>
 
         <div className="buttons">
