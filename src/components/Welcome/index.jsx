@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import LandingHeader from '../LandingHeader';
 import './styles.scss';
 
 const Welcome = () => {
+
+  const nav = useNavigate();
     return (
       <div className="welcome">
         <LandingHeader />
@@ -15,7 +18,7 @@ const Welcome = () => {
             </div>
 
             <div className="cards">
-              <div className="card individual">
+              <div className="card individual" onClick={() => nav("/sign-up")}>
                 <div className="card-title">Individual</div>
                 <div className="icon">
                   <span>For myself.</span>
@@ -23,7 +26,7 @@ const Welcome = () => {
                 </div>
               </div>
 
-              <div className="card couple">
+              <div className="card couple" onClick={() => nav("/sign-up")}>
                 <div className="card-title">Couple</div>
                 <div className="icon">
                   <span>For me and my partner.</span>
@@ -31,7 +34,7 @@ const Welcome = () => {
                 </div>
               </div>
 
-              <div className="card teen">
+              <div className="card teen" onClick={() => nav("/sign-up")}>
                 <div className="card-title">Teen</div>
                 <div className="icon">
                   <span>For my kid.</span>

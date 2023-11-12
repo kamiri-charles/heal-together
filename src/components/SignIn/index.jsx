@@ -37,7 +37,7 @@ const SignIn = () => {
                 <div>Heal</div> <div>Together</div>
             </div>
 
-            <button className='create-account'>Create Account</button>
+            <button className='create-account' onClick={() => nav('/sign-up')}>Create Account</button>
 
         </div>
 
@@ -53,6 +53,7 @@ const SignIn = () => {
                 )}
             </div>
             <form action="">
+              <div className="title">Sign in to your account.</div>
                 <input type="text" placeholder='Email address' />
                 <input type="password" placeholder='Password' />
 

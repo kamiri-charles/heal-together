@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 40px;
+    background: white;
+    
+    
+    .brand {
+        font-family: 'Edu TAS Beginner', cursive;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .profile {
+        position: absolute;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        background: var(--ui-primary-light);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 25px;
+    }
+}
