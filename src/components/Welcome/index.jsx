@@ -27,7 +27,7 @@ const Welcome = () => {
               </div>
 
               <div className="card couple" onClick={() => nav("/sign-up")}>
-                <div className="card-title">Couple</div>
+                <div className="card-title">Couples</div>
                 <div className="icon">
                   <span>For me and my partner.</span>
                   <i className="bx bx-right-arrow-alt"></i>

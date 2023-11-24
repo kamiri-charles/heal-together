@@ -1,8 +1,51 @@
 .dashboard {
+
     .content-wrapper {
-        width: 200px;
-        height: 200px;
+        position: absolute;
+        width: calc(100vw - 150px);
+        height: calc(100vh - 150px);
         background: var(--ui-white);
+        top: 125px;
+        left: 125px;
+        border-radius: 20px;
+        padding: 20px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            font-family: 'Edu TAS Beginner', cursive;
+            font-size: 2rem;
+            text-decoration: underline;
+
+        }
+
+        .dashboard-content {
+            width: 90%;
+            height: 90%;
+            display: flex;
+
+            .user-meta {
+                width: 40%;
+                height: 50%;
+                background: #a5a2a2;
+                border-radius: 10px;
+                padding: 40px;
+
+                .image {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 45px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    color: white;
+                    background: black;
+                }
+            }
+        }
     }
 }
 

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { MetroSpinner } from 'react-spinners-kit';
 import Axios from 'axios';
 import './styles.scss';
-import { MetroSpinner } from 'react-spinners-kit';
 
 const SignIn = () => {
 
@@ -57,7 +57,10 @@ const SignIn = () => {
                 <input type="text" placeholder='Email address' />
                 <input type="password" placeholder='Password' />
 
-                <button className='login'>Login</button>
+                <button className='login' onClick={e => {
+                  e.preventDefault();
+                  nav('/dashboard');
+                }}>Login</button>
                 <a href="/">Forgot password?</a>
             </form>
         </div>
