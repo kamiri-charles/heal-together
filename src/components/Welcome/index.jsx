@@ -51,6 +51,7 @@ const Welcome = () => {
           <div className="about__text">
             <div className="text-title">Find yourself in therapy.</div>
             <p className="text-content">
+              <img src={require('../../images/doctor.jpeg')} alt="Doctor smiling" />
               HealTogether™ was founded in 2023 to remove the traditional
               barriers to therapy and make mental health care more accessible to
               everyone. Today, it is the world's largest therapy service —
@@ -70,6 +71,12 @@ const Welcome = () => {
 
         <div id="jobs" className="section">
           <div className="title">Therapist Jobs</div>
+
+          <div className="content">
+            Are you a licensed therapist? Join HealTogether's network of
+            therapists and start seeing clients today.
+            <button className="btn" onClick={() => nav('/therapist/create-account')}>Apply Now</button>
+          </div>
         </div>
 
         <div id="contact" className="section">

@@ -3,6 +3,7 @@ import Welcome from './components/Welcome';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Dashboard from './components/Dashboard';
+import TherapistForm from './components/TherapistForm';
 import 'boxicons/css/boxicons.min.css';
 import './App.scss';
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/sign-in" element={ <SignIn /> } />
           <Route path="/sign-up" element={ <SignUp /> } />
           <Route path="/dashboard" element={ <Dashboard /> } />
+          <Route path="/therapist/create-account" element={ <TherapistForm /> }></Route>
         </Routes>
       </Router>
     </div>
